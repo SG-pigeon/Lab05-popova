@@ -39,13 +39,13 @@
 
 // string role = "user";
 
-// string result = role switch {
+// string result1 = role switch {
 //     "admin" => "Полный доступ",
 //     "teacher" => "Доступ преподавателя",
 //     not "admin" => "Ограниченный доступ"
 // };
 
-// Console.WriteLine(result);
+// Console.WriteLine(result1);
 
 // int age = 20;
 // bool hasTicket = true;
@@ -86,28 +86,28 @@
 
 // Console.WriteLine(result);
 
-// Console.Write("Введите результат: ");
-// int score = int.Parse(Console.ReadLine());
+Console.Write("Введите результат: ");
+int score = int.Parse(Console.ReadLine());
 
-// string result = score switch {
-//     >= 0 and <= 39 => "Неудовлетворительно",
-//     >= 40 and <= 59 => "Удовлетворительно",
-//     >= 60 and <= 79 => "Хорошо",
-//     >= 80 and <= 100 => "Отлично",
-//     _ => "Ошибка"
-// };
+string result = score switch {
+    >= 0 and <= 39 => "Неудовлетворительно",
+    >= 40 and <= 59 => "Удовлетворительно",
+    >= 60 and <= 79 => "Хорошо",
+    >= 80 and <= 100 => "Отлично",
+    _ => "Ошибка"
+};
 
-// Console.WriteLine(result);
+Console.WriteLine(result);
 
-// Console.Write("Введите количество очков: ");
-// int points = int.Parse(Console.ReadLine());
+Console.Write("Введите количество очков: ");
+int points = int.Parse(Console.ReadLine());
 
-// string level = points switch {
-//     < 0 => "Ошибка",
-//     >= 0 and <= 999 => "Новичок",
-//     >= 1000 and <= 4999 => "Опытный",
-//     >= 5000 and <= 9999 => "Продвинутый",
-//     >= 10000 => "Мастер"
-// };
+string level = points switch {
+    < 0 => "Ошибка",
+    >= 0 and <= 999 => "Новичок",
+    >= 1000 and <= 4999 => "Опытный",
+    >= 5000 and <= 9999 => "Продвинутый",
+    >= 10000 => "Мастер"
+};
 
-// Console.WriteLine(level);
+Console.WriteLine(level);
